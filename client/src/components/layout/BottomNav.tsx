@@ -15,7 +15,7 @@ const BottomNav = () => {
   const navigate = useNavigate();
 
   return (
-    <nav className="fixed bottom-[calc(env(safe-area-inset-bottom)+1rem)] left-1/2 -translate-x-1/2 z-50 flex items-center justify-around w-[calc(100%-2rem)] max-w-[calc(28rem-2rem)] rounded-2xl shadow-lg py-2 px-1" style={{ backgroundColor: "#207394" }}>
+    <nav className="fixed bottom-[calc(env(safe-area-inset-bottom,20px)+1rem)] left-1/2 -translate-x-1/2 z-50 flex items-center justify-around w-[calc(100%-2rem)] max-w-[calc(28rem-2rem)] rounded-2xl shadow-lg py-2 px-1" style={{ backgroundColor: "#207394" }}>
       {tabs.map((tab) => {
         const isActive = location.pathname === tab.path || (tab.path !== "/" && location.pathname.startsWith(tab.path));
         return (

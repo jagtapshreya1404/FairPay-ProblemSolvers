@@ -10,7 +10,7 @@ const AppHeader = () => {
   const avatarUrl = (user?.avatar?.startsWith("http") || user?.avatar?.startsWith("data:")) ? user.avatar : null;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 pt-[calc(env(safe-area-inset-top)+12px)] pb-3 bg-card/80 backdrop-blur-lg border-b border-border max-w-full overflow-hidden">
+    <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 pt-[calc(env(safe-area-inset-top,24px)+12px)] pb-3 bg-card/80 backdrop-blur-lg border-b border-border max-w-full overflow-hidden">
       <h1
         className="text-xl font-bold text-primary cursor-pointer tracking-tight shrink-0"
         onClick={() => navigate("/")}

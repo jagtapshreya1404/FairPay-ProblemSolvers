@@ -6,7 +6,7 @@ const AppLayout = () => {
   return (
     <div className="min-h-screen bg-background max-w-md mx-auto relative">
       <AppHeader />
-      <main className="pt-[calc(env(safe-area-inset-top)+4rem)] pb-[calc(env(safe-area-inset-bottom)+6rem)] px-4">
+      <main className="pt-[calc(env(safe-area-inset-top,24px)+4rem)] pb-[calc(env(safe-area-inset-bottom,20px)+6rem)] px-4">
         <Outlet />
       </main>
       <BottomNav />
